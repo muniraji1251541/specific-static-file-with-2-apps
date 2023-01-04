@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/c1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/c2.css' %}">
+</head>
+
+<body>
+    <center>
+        <h1>vaisu movie</h1>
+        <img src="{% static 'images/thunivu.jpg' %}" alt="">
+        <img src="{% static 'images/ajith.jpg' %}" alt="">
+        <img src="{% static 'images/manju.jpg' %}" alt="">
+        <h1>If you want Varisu movie click below link</h1>
+        <h1>
+            <a href="{% url 'any1:first' %}">click here</a>
+        </h1>
+    </center>
+</body>
+
+</html>
